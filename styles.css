@@ -1,0 +1,339 @@
+*{
+    margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+}
+
+.create-form{
+    padding: 20px 15px;
+}
+.control-formulario{
+    margin-bottom: 15px;    
+}
+.control-formulario label{
+    margin-bottom: 15px;
+    font-style: italic;
+    display: block;    
+}
+.control{
+    width: 100%;
+    padding: 8px 8px;
+}
+.boton-formulario{
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 450ms;
+}
+
+.boton-formulario:hover{
+    background-color: #0044AA;
+    border-radius: 10px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+    align-items: flex-end;  
+}
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+div.top-header{
+    padding: 5%;
+     
+    
+}
+
+.header-container{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo{
+    width: 50%;
+    padding: 10px;   
+}
+
+.logo{    
+    animation-name: aumentar;
+    animation-duration: 450ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes aumentar{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.20);
+    }
+}
+
+#lupa{
+    /* me falta separarlo de la barra de busqueda con flex*/
+    font-size: 18px;
+}
+
+header nav{
+    font-size: 12px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+article div.main-article{
+    width: 100%;     
+    
+}
+
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+.description {
+    opacity: 0;
+    margin-top: 20px;
+}
+
+.description:hover {
+    opacity: 1;
+    margin-top: 20px;
+}
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+}
+article{    
+    padding-bottom: 15px;
+    margin-bottom: 10px;   
+
+}
+main section article{
+    background-color: #fff;
+    margin: auto;  
+    
+}
+
+main section article img{
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+
+.fa-truck{
+    
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;  
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;    
+    right: 20px;
+    top: -15px;  
+    z-index: 1;
+    float: right;
+    margin-top: -19px;
+                 
+}
+main section article i:hover{
+    transform: rotate(-90deg);
+}
+.main-article{
+    position:relative;    
+
+}
+
+.products img{
+    z-index: -1;
+}
+
+.container01 .discount{
+    margin-left: 10px;
+}
+/* footer */
+
+footer {
+    background-color: #666;
+    height: 150px;
+}
+.flexBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 2em;
+}
+
+@media (min-width: 361px)
+{
+    .products article{        
+        display: inline;
+        width: 47%;
+        margin: 12px 10px;
+        box-sizing: border-box; 
+    }   
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+    
+        .nav-container01{
+            display: flex;
+            justify-content: space-between;
+            padding:-1;     
+            float: left;
+            gap: 10px;
+            margin-left: 3%;
+                 
+        }
+    
+        .nav-container02{
+            display: flex;
+            justify-content: space-around;
+            justify-content: flex-end;       
+            float: right;
+            gap: 10px;
+            margin-right: 3%;
+        }
+    
+        .container-top,
+        .container-buttom{
+            display: flex;
+            flex-direction: row;
+              
+    
+        }
+     
+    }    
+
+    @media (max-width: 361px)  
+{
+    .description{
+        visibility: hidden;
+    }
+    .description:hover{
+        visibility: visible;
+    }
+    .navbar{
+        visibility: hidden;
+    }
+    .nav-container02,
+    .nav-container01{
+        visibility: hidden;
+    }      
+    
+}
+@media (min-width: 769px)
+{
+    
+    .fa-bars{
+        visibility: hidden;
+    }
+    
+    .fa-bars{
+        visibility: hidden;
+    }    
+
+    .products{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 2;
+    }
+    
+   
+}
+
+@media (min-width: 1200px)
+{
+    .products{
+        display: flex;
+        flex-direction: wrap;
+        
+    }
+}

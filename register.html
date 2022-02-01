@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>                
+        <meta charset="UTF-8">
+        <title>Bienvenidxs a MercadoLiebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/normalize.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <header>
+        <div class="top-header">
+            <div class="header-container">
+                <div class="logo"> 
+                    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                </div>
+                
+                <form class="form" action="#" method="GET">                       
+                    <input type="text" name="buscar" placeholder="Buscar productos, marcas y más ">
+                    <span class="submit" id="lupa"><i class="fa fa-search"></i></span>
+                </form>
+            </div>        
+            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-container01">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="nav-container02">
+                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fa fa-bars burger"></i>
+        </div>
+    </header>     
+<body>
+    <form action="/" method="get" class="create-form">
+        <div class="control-formulario">
+            <label>Nombre y Apellido:</label>
+            <input type="text" name="nombre-apellido" class="control" minlength="5" maxlength="40" required
+            title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 40">    
+        </div>
+        <div class="control-formulario">
+            <label>Nombre de usuario:</label>
+            <input type="text" name="precio"class="control">    
+        </div>
+        <div class="control-formulario">
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="nacimiento"class="control">    
+        </div>
+        <div class="control-formulario">
+            <label>Domicilio:</label>
+            <input type="text" name="domicilio" class="control">    
+        </div>
+        <div class="control-formulario">
+            <label>Queres comprar o vender?:</label>                
+            <input type="radio" name="tipo" class="control"> 
+            <input type="radio" name="tipo" class="control">                   
+        </div>        
+        <div class="control-formulario">
+            <label>Categorias de interés:</label>                          
+            <input type="checkbox" name="interes" class="control">Electro
+            <input type="checkbox" name="interes" class="control">Moda
+            <input type="checkbox" name="interes" class="control">Hogar
+            <input type="checkbox" name="interes" class="control">Juguetería
+            <input type="checkbox" name="interes" class="control">Vida sana                  
+        </div>        
+        <div class="control-formulario">
+            <label>Eliga su foto:</label>
+            <input type="file" name="foto" class="control">    
+        </div>
+        <div class="control-formulario">
+            <label>Contraseña:</label>
+            <input type="password" name="password" class="control">    
+        </div>
+        <div class="control-formulario">
+            <label>Confirmar contraseña:</label>
+            <input type="password" name="password-confirm" class="control">    
+        </div>                 
+        <button type="reset" class="boton-formulario">Borrar</button>     
+        <button type="submit" class="boton-formulario">Guardar</button>                
+    </form>
+</body>
+</html>
